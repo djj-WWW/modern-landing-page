@@ -4,25 +4,25 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "电商平台重构",
+    title: "1",
     category: "Web 开发",
     description: "为零售品牌打造的高性能电商前端，提升转化率 40%。",
     tags: ["Next.js", "TypeScript", "Tailwind"],
   },
   {
-    title: "数据可视化仪表盘",
+    title: "2",
     category: "数据可视化",
     description: "面向运营团队的实时数据看板，支持多维度交互分析。",
     tags: ["React", "D3.js", "WebSocket"],
   },
   {
-    title: "品牌视觉设计系统",
+    title: "3",
     category: "UI / UX 设计",
     description: "从零搭建的设计系统与组件库，统一跨平台视觉语言。",
     tags: ["Figma", "Design System", "Motion"],
   },
   {
-    title: "移动端社交应用",
+    title: "4",
     category: "移动开发",
     description: "聚焦兴趣社群的轻量级社交 App，月活突破 10 万。",
     tags: ["React Native", "Expo", "GraphQL"],
