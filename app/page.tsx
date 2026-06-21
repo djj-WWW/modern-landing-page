@@ -8,6 +8,7 @@ const projects = [
     category: "Web 开发",
     description: "为零售品牌打造的高性能电商前端，提升转化率 40%。",
     tags: ["Next.js", "TypeScript", "Tailwind"],
+    link: "https://opera-mask-ar.pages.dev/opera-mask-ar.html",
   },
   {
     title: "2",
@@ -170,28 +171,34 @@ export default function Home() {
         <h2 className="mb-3 text-center text-4xl font-bold text-white">精选作品</h2>
         <p className="mx-auto mb-12 max-w-xl text-center text-white/80">部分代表性项目，涵盖设计、开发与产品落地。</p>
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-8 backdrop-blur-md transition-all duration-300 hover:border-red-400/60 hover:shadow-[0_0_30px_rgba(239,68,68,0.4)]"
-            >
-              <div className="mb-4 flex items-start justify-between">
-                <span className="text-xs font-semibold uppercase tracking-wider text-red-200/90">
-                  {project.category}
-                </span>
-                <ArrowUpRight className="h-5 w-5 text-white/60 transition-all duration-300 group-hover:text-red-400 group-hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
-              </div>
-              <h3 className="mb-3 text-2xl font-bold text-white">{project.title}</h3>
-              <p className="mb-6 text-sm leading-relaxed text-white/80">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/90">
-                    {tag}
+          {projects.map((project) => {
+            const CardTag = project.link ? "a" : "div"
+            return (
+              <CardTag
+                key={project.title}
+                {...(project.link
+                  ? { href: project.link, target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                className="group relative block overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-8 backdrop-blur-md transition-all duration-300 hover:border-red-400/60 hover:shadow-[0_0_30px_rgba(239,68,68,0.4)]"
+              >
+                <div className="mb-4 flex items-start justify-between">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-red-200/90">
+                    {project.category}
                   </span>
-                ))}
-              </div>
-            </div>
-          ))}
+                  <ArrowUpRight className="h-5 w-5 text-white/60 transition-all duration-300 group-hover:text-red-400 group-hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+                </div>
+                <h3 className="mb-3 text-2xl font-bold text-white">{project.title}</h3>
+                <p className="mb-6 text-sm leading-relaxed text-white/80">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/90">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </CardTag>
+            )
+          })}
         </div>
       </section>
 
