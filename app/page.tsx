@@ -19,22 +19,22 @@ export default function Home() {
       <nav className="relative z-10 px-16 py-8">
         <ul className="flex gap-12 text-sm font-bold tracking-wide text-white">
           <li className="cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
-            FAVORITES
+            收藏
           </li>
           <li className="cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
-            FASHION
+            时尚
           </li>
           <li className="cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
-            ELECTRONICS
+            电子产品
           </li>
           <li className="cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
-            HEALTH & BEAUTY
+            健康美妆
           </li>
           <li className="cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
-            SPORTS
+            运动
           </li>
           <li className="cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">
-            SALE
+            促销
           </li>
         </ul>
       </nav>
@@ -42,13 +42,13 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative z-10 flex items-center justify-between px-16 pt-12">
         <div className="max-w-2xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-red-200/90">ONLINE SHOPPING:</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-red-200/90">在线购物：</p>
           <h1 className="mb-6 text-6xl font-bold leading-tight text-white">
-            PAY ALL YOUR BILLS
+            一键支付
             <br />
-            WITH ONE TOUCH
+            所有账单
             <br />
-            WITH E-PAYMENT
+            尽在电子支付
           </h1>
           <p className="mb-10 max-w-xl text-base leading-relaxed text-white/90">{""}</p>
 
@@ -58,14 +58,14 @@ export default function Home() {
               size="lg"
               className="rounded-full bg-white px-8 text-sm font-semibold uppercase tracking-wide text-[#7B6BA8] transition-all duration-300 hover:bg-white/90 hover:shadow-[0_0_20px_rgba(239,68,68,0.8),0_0_40px_rgba(239,68,68,0.5)]"
             >
-              BUY NOW
+              立即购买
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="rounded-full border-2 border-white bg-transparent px-8 text-sm font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:border-red-400 hover:bg-white/10 hover:text-red-400 hover:shadow-[0_0_20px_rgba(239,68,68,0.8),0_0_40px_rgba(239,68,68,0.5)]"
             >
-              READ MORE
+              了解更多
             </Button>
           </div>
 
