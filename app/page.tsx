@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "1",
+    title: "创意交互网页设计",
     category: "Web 开发",
     description: "为零售品牌打造的高性能电商前端，提升转化率 40%。",
     tags: ["Next.js", "TypeScript", "Tailwind"],
