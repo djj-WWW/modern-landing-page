@@ -13,8 +13,8 @@ const aurora = Audiowide({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "个人作品集 | 创意设计与开发",
+  description: "一名专注于创意设计与前端开发的作品集，展示项目案例、技能与联系方式。",
   generator: "v0.app",
 }
 
